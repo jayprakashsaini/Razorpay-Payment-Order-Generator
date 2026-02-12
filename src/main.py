@@ -19,3 +19,4 @@ def main(context):
   }
   response = client.order.create(data=DATA)
   context.log(f"response is {response}")
+  return context.res.json(response)
